@@ -1,0 +1,65 @@
+Tamil OCR Application - Guide
+Overview
+A powerful command-line application for extracting Tamil text from images using advanced OCR engines and AI validation. The system combines multiple preprocessing techniques with state-of-the-art language models to achieve high-accuracy Tamil text recognition.
+
+Features
+
+Dual OCR Engine Support: Choose between ocr_tamil and PaddleOCR
+5 Preprocessing Methods: Optimize for different image types
+AI Validation: Qwen2.5 72B model corrects OCR errors
+Batch Processing: Process multiple images simultaneously
+Confidence Assessment: Automatic quality evaluation
+Detailed Outputs: Save preprocessed images and results
+
+OCR Engines Explained:
+Tamil OCR Terminal Application - Complete Guide
+Overview
+A powerful command-line application for extracting Tamil text from images using advanced OCR engines and AI validation. The system combines multiple preprocessing techniques with state-of-the-art language models to achieve high-accuracy Tamil text recognition.
+
+Features
+
+Dual OCR Engine Support: Choose between ocr_tamil and PaddleOCR
+5 Preprocessing Methods: Optimize for different image types
+AI Validation: Qwen2.5 72B model corrects OCR errors
+Batch Processing: Process multiple images simultaneously
+Confidence Assessment: Automatic quality evaluation
+Detailed Outputs: Save preprocessed images and results
+
+
+Installation
+Prerequisites
+bash# Python 3.8 or higher required
+python --version
+
+# Install required packages
+pip install numpy opencv-python pillow torch ocr-tamil paddleocr openai
+Verify Installation
+bashpython app.py --help
+
+OCR Engines Explained
+1. ocr_tamil (Default)
+What it is: A specialized OCR library specifically designed for Tamil script recognition.
+Strengths:
+
+Optimized for Tamil Unicode characters
+Better handling of complex Tamil ligatures
+Lightweight and fast processing
+Pre-trained on Tamil documents
+
+# Basic usage
+python app.py image.jpg
+
+# Use PaddleOCR with auto preprocessing
+python app.py image.jpg --engine paddleocr --mode auto
+
+# Enable AI validation
+python app.py image.jpg --api-key YOUR_OPENROUTER_KEY --ai
+
+# Process multiple images with detailed output
+python app.py img1.jpg img2.jpg img3.jpg --details --output ./results
+
+# Specific preprocessing method
+python app.py image.jpg --mode standard --engine ocr_tamil
+
+# Full featured command
+python app.py image.jpg --engine paddleocr --mode auto --api-key YOUR_KEY --ai --details --output ./my_results

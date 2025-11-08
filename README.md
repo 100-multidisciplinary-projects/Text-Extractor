@@ -13,6 +13,53 @@ A powerful command-line tool for extracting Tamil text from images using advance
 - **Beautiful Terminal Output**: Color-coded, formatted results with clear visual hierarchy
 
 ---
+## OCR Engines Explained
+OCR Engines Explained
+1. ocr_tamil (Default)
+What it is: A specialized OCR library specifically designed for Tamil script recognition.
+Strengths:
+
+Optimized for Tamil Unicode characters
+Better handling of complex Tamil ligatures
+Lightweight and fast processing
+Pre-trained on Tamil documents
+
+Best for:
+
+Printed Tamil text
+Clear, high-contrast images
+Modern Tamil fonts
+Documents and books
+
+Technical Details:
+
+Uses deep learning models trained on Tamil datasets
+Includes text detection and recognition modules
+Handles diacritics and conjunct characters
+
+2. PaddleOCR
+What it is: An industrial-grade multilingual OCR system developed by Baidu, supporting 80+ languages including Tamil.
+Strengths:
+
+Robust text detection in complex layouts
+Better performance on handwritten text
+Advanced angle correction capabilities
+Handles skewed or rotated text
+
+Best for:
+
+Complex document layouts
+Handwritten Tamil text
+Mixed Tamil-English documents
+Challenging lighting conditions
+
+Technical Details:
+
+Uses DB (Differentiable Binarization) for text detection
+CRNN (Convolutional Recurrent Neural Network) for recognition
+Built-in text angle classification
+Supports both GPU and CPU inference
+
 
 ## 📋 Requirements
 

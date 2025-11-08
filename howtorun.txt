@@ -11,6 +11,10 @@ Batch Processing: Process multiple images simultaneously
 Confidence Assessment: Automatic quality evaluation
 Detailed Outputs: Save preprocessed images and results
 
+#For translation of three languages: Chinese, Japanese, French:
+Run in terminal:
+python translate.py image.jpg --api-key YOUR OPENROUTER KEY --ai --translate
+
 # Basic usage
 python app.py image.jpg
 

@@ -32,3 +32,6 @@ python app.py image.jpg --mode standard --engine ocr_tamil
 
 # Full featured command
 python app.py image.jpg --engine paddleocr --mode auto --api-key YOUR_KEY --ai --details --output ./my_results
+
+#For running the UI version
+streamlit run ui.py
